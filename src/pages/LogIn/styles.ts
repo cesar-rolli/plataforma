@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import {
-  Instagram,
-} from "../../styles/Icons";
+import { Instagram, RemoveRedEye } from "../../styles/Icons";
 
 export const Container = styled.div`
 	width: 100vw;
@@ -237,7 +235,20 @@ export const InstagramIcon = styled(Instagram)`
 	&:hover {
 		fill: var(--branco);
 	}
+
 	@media (min-width: 960px) {
 		height: 2.5vw;
+	}
+`;
+
+export const OlhoIcon = styled(RemoveRedEye)`
+	width: 4vw;
+	margin-left: -7vw;
+	fill: var(--preto);
+	cursor: pointer;
+
+	@media (min-width: 960px) {
+		width: 1vw;
+		margin-left: -2vw;
 	}
 `;

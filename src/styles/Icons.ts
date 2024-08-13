@@ -4,6 +4,7 @@ export {
   MailOutline,
   Menu,
   People,
+  RemoveRedEye,
 } from "styled-icons/material";
 
 export {

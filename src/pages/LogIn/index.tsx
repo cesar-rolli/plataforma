@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { 
   Acessar,
@@ -12,6 +12,7 @@ import {
   Links,
   LoginArea,
   MeioContato,
+  OlhoIcon,
   Rodape,
   Wrapper,
 
@@ -20,6 +21,18 @@ import {
 import foto0 from '../../assets/fotosLogin/foto0.png';
 
 const LogIn: React.FC = () => {
+  const [senha, setSenha] = useState("password");
+  const [valor_senha, setValor_senha] = useState(true);
+  const hancleClick = () => {
+    if (valor_senha) {
+      setSenha("text");
+      setValor_senha(!valor_senha);
+    } else {
+      setSenha("password");
+      setValor_senha(!valor_senha);
+    }
+  }
+
   return (
     <Container>
       <Foto src={foto0} />
@@ -31,7 +44,11 @@ const LogIn: React.FC = () => {
             placeholder="Usuário"/>
           <h2>Senha</h2>
           <Input 
-            placeholder="Senha"/>
+            placeholder="Senha"
+            type={senha} />
+          <OlhoIcon 
+            id="olho"
+            onClick={hancleClick} />
           <Links to={"/esqueceu-senha"}>Esqueceu a senha?</Links>
           <Acessar to={"/inicio"}><p>Entrar</p></Acessar>
           <Divisor />
