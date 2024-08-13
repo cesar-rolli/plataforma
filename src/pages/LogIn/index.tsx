@@ -27,9 +27,11 @@ const LogIn: React.FC = () => {
         <LoginArea>
           <h1>Bem vindo à NEJFlix</h1>
           <h2>Usuário</h2>
-          <Input />
+          <Input 
+            placeholder="Usuário"/>
           <h2>Senha</h2>
-          <Input />
+          <Input 
+            placeholder="Senha"/>
           <Links to={"/esqueceu-senha"}>Esqueceu a senha?</Links>
           <Acessar to={"/inicio"}><p>Sign In</p></Acessar>
           <Divisor />
