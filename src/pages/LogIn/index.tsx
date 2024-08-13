@@ -33,7 +33,7 @@ const LogIn: React.FC = () => {
           <Input 
             placeholder="Senha"/>
           <Links to={"/esqueceu-senha"}>Esqueceu a senha?</Links>
-          <Acessar to={"/inicio"}><p>Sign In</p></Acessar>
+          <Acessar to={"/inicio"}><p>Entrar</p></Acessar>
           <Divisor />
           <Cadastrese>
             <p>Não tem uma conta?</p>

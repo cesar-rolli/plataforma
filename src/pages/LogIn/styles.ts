@@ -42,13 +42,14 @@ export const LoginArea = styled.div`
 	padding: 3vh 0 0 5vw;
 
 	> h1 {
-		font-size: 3vh;
+		font-size: 4vw;
     color: var(--branco);
     font-family: "Comfortaa", sans-serif;
+		margin-left: 1vw;
 	}
 	
 	> h2 {
-		font-size: 2vh;
+		font-size: 3vw;
     color: var(--branco);
 		font-weight: 400;
     font-family: "Comfortaa", sans-serif;
@@ -62,12 +63,20 @@ export const LoginArea = styled.div`
 		border-radius: 2vw;
 		margin-right: 3vh;
 		padding: 5vh 0 0 2.5vw;
+
+		> h1 {
+			font-size: 3vh;
+		}
+
+		> h2 {
+			font-size: 2vh;
+		}
 	}
 `;
 
 export const Input = styled.input`
 	width: 70vw;
-	height: 5vh;
+	height: 10vw;
 	background: var(--branco);
 	border-radius: 1vh;
 	outline: none;
@@ -82,6 +91,7 @@ export const Input = styled.input`
 
 	@media (min-width: 960px) {
 		width: 25vw;
+		height: 5vh;
 	}
 `;
 
@@ -89,7 +99,7 @@ export const Links = styled(Link)`
 	display: flex;
   text-decoration: none;
   color: var(--branco);  
-  font-size: 2vh;
+  font-size: 3vw;
 	width: 70vw;
 	margin: 2vh 0 3vh 0;
 
@@ -98,7 +108,8 @@ export const Links = styled(Link)`
   }
 
 	@media (min-width: 960px) {
-		width: 10vw;
+		width: 25vw;  
+		font-size: 2vh;
 	}
 `;
 
@@ -106,17 +117,19 @@ export const Acessar = styled(Link)`
 	display: flex;
 	text-decoration: none;
 	color: var(--branco);  
-	font-size: 2vh;
+	font-size: 4vw;
 	font-weight: bold;
 	background: var(--laranja);
 	width: 70vw;
-	height: 5vh;
+	height: 10vw;
 	border-radius: 1vh;
 	justify-content: center;
 	align-items: center;
 
 	@media (min-width: 960px) {
 		width: 25vw;
+		height: 5vh;
+		font-size: 2vh;
 	}
 `;
 
@@ -140,11 +153,14 @@ export const Cadastrese = styled.div`
 	> p {
 		color: var(--branco);  
 		font-weight: 400;
-		font-size: 1.8vh;
+		font-size: 3vw;
 	}
 
 	@media (min-width: 960px) {
 		width: 25vw;
+		> p {
+			font-size: 1.8vh;
+		}
 	}
 `;
 
@@ -152,7 +168,7 @@ export const CadastroLink = styled(Link)`
 	color: var(--laranja);  
 	font-weight: 400;
 	text-decoration: none;
-	font-size: 1.8vh;
+	font-size: 3vw;
 	margin-left: 2vw;
 
 	&:hover {
@@ -161,6 +177,7 @@ export const CadastroLink = styled(Link)`
 
 	@media (min-width: 960px) {
 		margin-left: 0.5vw;
+		font-size: 1.8vh;
 	}
 `;
 
@@ -170,10 +187,11 @@ export const Rodape = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	width: 70vw;
-	margin-top: 25vh;
+	position: absolute;
+	bottom: 8vh;
 
 	> p {
-    font-size: 2vh;
+    font-size: 3vw;
     color: var(--branco);
     font-weight: 400;
 		font-family: "Comfortaa", sans-serif;
@@ -181,6 +199,11 @@ export const Rodape = styled.div`
 
 	@media (min-width: 960px) {
 		width: 25vw;
+		margin-top: 25vh;
+
+		> p {
+			font-size: 2vh;
+		}
 	}
 `;
 
@@ -191,7 +214,7 @@ export const MeioContato = styled.a`
 
   > h1 {
 		padding-left: 2vw;
-    font-size: 2vh;
+    font-size: 3vw;
     color: var(--branco);
     font-weight: 400;
 		font-family: "Comfortaa", sans-serif;
